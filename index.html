@@ -4,14 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio của Tuấn Tài</title>
+    <meta name="description" content="Portfolio của Tuấn Tài, sinh viên học phát triển website." />
+<meta name="author" content="Tuấn Tài" />
+<meta name="robots" content="index, follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Portfolio của Tuấn Tài" />
+<meta property="og:description" content="Giới thiệu bản thân và kết nối với Tuấn Tài." />
+<meta property="og:url" content="https://hadess-95.github.io/lab1.github.io/" />
+<meta property="og:image" content="https://hadess-95.github.io/lab1.github.io/banner.avif" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Portfolio của Tuấn Tài" />
+<meta name="twitter:description" content="Giới thiệu bản thân và kết nối với Tuấn Tài." />
+<meta name="twitter:image" content="https://hadess-95.github.io/lab1.github.io/banner.avif" />
+<link rel="icon" href="%BASE_URL%favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="%BASE_URL%apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="%BASE_URL%favicon-16x16.png" />
+<link rel="manifest" href="%BASE_URL%site.webmanifest" />
   </head>
 
   <body>
-    <div class="flex justify-center items-center p-12">
-      <h1 class="text-5xl text-green-300 animate-bounce">
-        Hello, Tailwind CSS
+    <main>
+  <section
+    class="portfolio-banner min-h-screen w-full bg-cover bg-center
+           flex flex-col justify-center items-center"
+  >
+    <div class="w-full lg:w-[80%] p-6 lg:p-12 text-gray-800">
+      <h1 class="grid grid-cols-1 gap-3 text-4xl lg:text-6xl font-bold mb-10">
+        <span>
+          Hi, my name is
+          <span class="text-teal-400">Tuấn Tài</span>
+        </span>
+        <span>I'm learning Web Development.</span>
       </h1>
+
+      <a
+        href="#about-me"
+        class="inline-block border-2 border-teal-400 px-8 py-3 uppercase
+               hover:bg-teal-400 hover:text-white transition-colors"
+      >
+        Know more
+      </a>
     </div>
+  </section>
+  <section
+  id="about-me"
+  class="min-h-screen w-full bg-teal-400 text-white
+         flex flex-col justify-center items-center p-6 lg:p-12"
+>
+  <div class="w-full lg:w-[60%]">
+    <h2 class="text-center uppercase text-2xl lg:text-5xl font-bold mb-12">
+      About Me
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="flex justify-center items-center">
+        <img
+          src="%BASE_URL%imgs/avatar.png"
+          alt="Ảnh chân dung Tuấn Tài"
+          class="w-full max-w-xs object-cover"
+        />
+      </div>
+
+      <div class="lg:col-span-2 flex items-center">
+        <div class="text-center lg:text-start lg:p-8">
+          <p class="text-lg font-light mb-6">
+            Mình đang học phát triển website. Mình muốn hiểu cách xây dựng
+            giao diện rõ ràng và sử dụng tốt trên điện thoại lẫn máy tính.
+          </p>
+
+          <a
+            href="%BASE_URL%cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block border-2 border-white px-8 py-3 uppercase
+                   hover:bg-white hover:text-teal-400 transition-colors"
+          >
+            View My CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  id="contact"
+  class="min-h-[500px] w-full bg-white text-gray-800 p-6 lg:p-12
+         flex flex-col justify-center items-center text-center"
+>
+  <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-6">
+    Contact
+  </h2>
+
+  <p class="text-2xl text-teal-500 mb-3">
+    I LOOK FORWARD TO WORKING WITH YOU
+  </p>
+
+  <p class="mb-8">
+    Let's connect to discuss learning opportunities and projects.
+  </p>
+
+  <a
+    href="mailto:nguyentuantai956@gmail.com
+    ?subject=Portfolio%20Contact"
+    class="inline-block border-2 border-teal-400 bg-teal-400 text-white
+           px-8 py-3 uppercase hover:bg-white hover:text-teal-400 transition-colors"
+  >
+    Send an email now
+  </a>
+</section>
+</main>
+
+<footer
+  class="bg-neutral-900 min-h-[300px] py-12
+         flex flex-col justify-center items-center"
+>
+  <ul class="flex gap-8">
+    <li class="hover:-translate-y-2 transition-transform">
+      <a
+        href="https://github.com/hadess-95"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="%BASE_URL%imgs/github.svg"
+          alt="GitHub của Tuấn Tài"
+          class="w-10 grayscale hover:grayscale-0"
+        />
+      </a>
+    </li>
+  </ul>
+
+  <hr class="w-1/2 border-gray-500 mt-10" />
+  <p class="text-gray-400 mt-5">© Tuấn Tài</p>
+</footer>
 
     <script type="module" src="/src/scripts/application.js"></script>
   </body>
